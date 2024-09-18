@@ -22,8 +22,9 @@ function addOne() {
 }
 
 function setImage() {
-    if (getScore() >= 50) {
-        $circle.setAttribute('src', './assets/knife.jpeg')
+    const random = Math.floor(Math.random() * 5)
+    if (getScore()%20 === 0) {
+        $circle.setAttribute('src', `./assets/capy${random}.jpeg`)
     }
 }
 
